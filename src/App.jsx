@@ -1,9 +1,19 @@
+import AboutSection from "./components/AboutSection";
+import FooterSection from "./components/FooterSection";
+import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar";
+import ServiceSection from "./components/ServiceSection";
+import ToursSection from "./components/Tours/ToursSection";
+
 function App() {
   return (
     <>
-      <div>
-        <p className="text-3xl">Hello React</p>
-      </div>
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      <ServiceSection />
+      <ToursSection />
+      <FooterSection />
     </>
   );
 }
