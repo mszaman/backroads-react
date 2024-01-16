@@ -49,3 +49,44 @@ export const tours = [
     price: "3300",
   },
 ];
+
+export const menuItems = [
+  {
+    id: 1,
+    menuText: "home",
+    href: "#hero",
+  },
+  {
+    id: 2,
+    menuText: "about",
+    href: "#about",
+  },
+  {
+    id: 3,
+    menuText: "services",
+    href: "#services",
+  },
+  {
+    id: 4,
+    menuText: "tours",
+    href: "#tours",
+  },
+];
+
+export const socialItems = [
+  {
+    id: 1,
+    href: "https://facebook.com",
+    iconName: "fa-brands fa-facebook",
+  },
+  {
+    id: 2,
+    href: "https://facebook.com",
+    iconName: "fa-brands fa-twitter",
+  },
+  {
+    id: 3,
+    href: "https://facebook.com",
+    iconName: "fa-brands fa-telegram",
+  },
+];
