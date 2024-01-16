@@ -1,6 +1,19 @@
+import { useState } from "react";
 import logo from "../assets/images/logo.svg";
 
 export default function Navbar() {
+  const [navClass, setNavClass] = useState("-translate-x-full");
+  const [menuIconClass, setMenuIconClass] = useState("fa-bars");
+
+  const toggleNavMenu = () => {
+    setNavClass((nc) => {
+      return nc === "-translate-x-full" ? "translate-x-0" : "-translate-x-full";
+    });
+    setMenuIconClass((mic) => {
+      return mic === "fa-bars" ? "fa-xmark" : "fa-bars";
+    });
+  };
+
   return (
     <>
       <header className="absolute h-16 w-full bg-white">
@@ -12,7 +25,7 @@ export default function Navbar() {
           {/* Nav Menu Items */}
           <ul
             id="nav-links"
-            className="absolute left-0 top-16 z-10 flex min-h-screen w-full -translate-x-full flex-col gap-y-10 bg-white p-10 tracking-[0.25rem] text-grey-1 lg:static lg:top-0 lg:min-h-16 lg:-translate-x-0 lg:flex-row lg:items-center lg:justify-center lg:gap-x-3 lg:p-0"
+            className={`absolute left-0 top-16 z-10 flex min-h-screen w-full ${navClass} flex-col gap-y-10 bg-white p-10 tracking-[0.25rem] text-grey-1 lg:static lg:top-0 lg:min-h-16 lg:-translate-x-0 lg:flex-row lg:items-center lg:justify-center lg:gap-x-3 lg:p-0`}
           >
             <li>
               <a className="duration-300 hover:text-primary-4" href="#hero">
@@ -53,7 +66,10 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-            <i className="fa-solid fa-bars cursor-pointer text-2xl text-primary-5 lg:hidden"></i>
+            <i
+              className={`fa-solid ${menuIconClass} cursor-pointer text-2xl text-primary-5 lg:hidden`}
+              onClick={toggleNavMenu}
+            ></i>
           </div>
         </nav>
       </header>
