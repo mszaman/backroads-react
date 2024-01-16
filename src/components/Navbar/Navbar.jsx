@@ -4,8 +4,6 @@ import MenuItem from "./NavItems/MenuItem";
 import SocialItem from "./NavItems/SocialItem";
 
 export default function Navbar() {
-  const [navClass, setNavClass] = useState("-translate-x-full");
-  const [menuIconClass, setMenuIconClass] = useState("fa-bars");
   const [toggleNavBtn, setToggleNavBtn] = useState(false);
 
   const toggleNavMenu = () => {
