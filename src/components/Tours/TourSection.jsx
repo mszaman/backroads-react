@@ -1,4 +1,3 @@
-import { tours } from "../../data";
 import TourCard from "./TourCard";
 
 export default function ToursSection() {
@@ -10,9 +9,7 @@ export default function ToursSection() {
         </h1>
       </div>
       <div className="mx-auto grid w-[90vw] grid-cols-1 gap-8 sm:grid-cols-2 lg:w-[95vw] lg:max-w-[1170px] xl:grid-cols-3">
-        {tours.map((tour) => {
-          return <TourCard key={tour.id} {...tour} />;
-        })}
+        <TourCard />
       </div>
     </section>
   );
