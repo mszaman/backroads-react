@@ -1,4 +1,4 @@
-import SectionLayout from "../SectionLayout";
+import SectionLayout from "../Layouts/SectionLayout";
 import Service from "./Service";
 
 export default function SeviceSection() {

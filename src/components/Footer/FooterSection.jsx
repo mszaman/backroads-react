@@ -1,5 +1,5 @@
-import MenuItem from "./Navbar/NavItems/MenuItem";
-import SocialItem from "./Navbar/NavItems/SocialItem";
+import MenuItem from "../Navbar/NavItems/MenuItem";
+import SocialItem from "../Navbar/NavItems/SocialItem";
 
 export default function FooterSection() {
   return (

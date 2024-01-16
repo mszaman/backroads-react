@@ -1,4 +1,5 @@
-import heroImage from "../assets/images/main.jpeg";
+import heroImage from "../../assets/images/main.jpeg";
+import Description from "../Atoms/Description";
 
 export default function HeroSection() {
   return (
@@ -19,10 +20,10 @@ export default function HeroSection() {
         <h1 className="mb-4 text-6xl font-bold uppercase tracking-widest">
           continue exploring
         </h1>
-        <p className="mb-8 text-[1rem] tracking-[0.25rem]">
+        <Description mb="mb-8" size="text-base" color="text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
           explicabo debitis est autem dicta.
-        </p>
+        </Description>
         <a
           href="#tours"
           className="bg-white px-8 py-4 text-2xl uppercase tracking-widest text-primary-5"

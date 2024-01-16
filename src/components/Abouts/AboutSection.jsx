@@ -1,5 +1,5 @@
 import About from "./About";
-import SectionLayout from "../SectionLayout";
+import SectionLayout from "../Layouts/SectionLayout";
 
 export default function AboutSection() {
   return (
